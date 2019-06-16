@@ -4,16 +4,16 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="404.html">Team Bio</a>
+						<a href="team-.html">Team Bio</a>
 					</li>
 					<li>
-						<a href="404.html">Tournament Schedule</a>
+						<a href="schedule.html">Tournament Schedule</a>
 					</li>
 					<li>
-						<a href="404.html">Roster Archives</a>
+						<a href="archives.html">Roster Archives</a>
 					</li>
 					<li>
-						<a href="404.html">Join our mailing list!</a>
+						<a href="listserv.html">Join our mailing list!</a>
 					</li>
 				</ul>
 			</nav>
@@ -30,6 +30,8 @@
 		<img src="../assets/floppy.gif" />
 		<img src="../assets/flashinglight.gif" height="50" width="50" />
 		<img src="../assets/spaceshuttle.gif" />
+		<img src="../assets/flames.gif" />
+		<img src="../assets/lightning.gif" />
 		<section>
 			<h1 class="roster-heading">2019 Roster</h1>
 			<dl class="key">
@@ -61,10 +63,6 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
 import UFO from './UFO.vue'
-
-function randint(max: number, min = 0) {
-	return Math.floor(Math.random() * Math.floor(max - min)) + min
-}
 
 @Component({
 	components: {

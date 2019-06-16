@@ -30,7 +30,6 @@ export default class UFO extends Vue {
 
 	schedule() {
 		const delay = randint(30, 10)
-		console.log('scheduling', this.$refs.img, delay)
 
 		setTimeout((ts: number) => {
 			this.show = true
@@ -48,7 +47,7 @@ export default class UFO extends Vue {
 				setTimeout((ts: number) => {
 					this.show = false
 					this.schedule()
-				}, 2000) // todo: tweak this to the duration of the gif?
+				}, 2000)
 			})
 		}, delay * 1000)
 	}
