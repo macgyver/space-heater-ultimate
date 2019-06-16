@@ -2,7 +2,7 @@
 	<main class="roster" ref="roster">
 		<header>
 			<nav>
-				<ol>
+				<ul>
 					<li>
 						<a href="404.html">Team Bio</a>
 					</li>
@@ -15,7 +15,7 @@
 					<li>
 						<a href="404.html">Join our mailing list!</a>
 					</li>
-				</ol>
+				</ul>
 			</nav>
 			<img src="../assets/skulltrumpet.gif" />
 			<h1>
@@ -54,25 +54,23 @@
 			</div>
 		</section>
 
-		<img
-			width="400"
-			height="400"
-			class="ufo"
-			src="../assets/transparentufo.gif"
-			ref="ufo"
-			v-if="showUfo"
-		/>
+		<UFO />
 	</main>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
+import UFO from './UFO.vue'
 
 function randint(max: number, min = 0) {
 	return Math.floor(Math.random() * Math.floor(max - min)) + min
 }
 
-@Component
+@Component({
+	components: {
+		UFO,
+	},
+})
 export default class Roster extends Vue {
 	@Prop() private msg!: string
 
@@ -243,55 +241,6 @@ export default class Roster extends Vue {
 		const images = require.context('../assets/', false)
 		return images('./' + file)
 	}
-
-	ufo = document.createElement('img')
-	showUfo = false
-
-	async mounted() {
-		const imagesContext = require.context('../assets/', false)
-		const url = await imagesContext('./transparentufo.gif')
-		console.log('mounted', url, this.ufo)
-		this.ufo.src = url
-		if (this.ufo.complete) {
-			this.scheduleUfo()
-		} else {
-			this.ufo.addEventListener('load', _e => {
-				this.scheduleUfo()
-			})
-		}
-	}
-
-	scheduleUfo() {
-		const delay = randint(30, 10)
-		console.log('scheduling ufo', this.ufo, delay)
-
-		// this.$refs.ufo.setAttribute('hidden', false)
-
-		setTimeout((ts: number) => {
-			this.showUfo = true
-
-			Vue.nextTick(() => {
-				// todo: make top/bottom/left/right somewhat random (maybe just flip between left and right side?)
-				// also vary the z-index
-				const x = 100
-				const y = 100
-				const $ufo = this.$refs.ufo as HTMLElement
-				$ufo.style.top = `${x}px`
-				$ufo.style.left = `${y}px`
-				console.debug('adding ufo', $ufo, x, y, ts)
-
-				// const roster = this.$refs.roster as HTMLElement
-				// roster.appendChild(this.ufo)
-
-				setTimeout((ts: number) => {
-					// console.log('removing ufo', ts)
-					// this.ufo.remove()
-					this.showUfo = false
-					this.scheduleUfo()
-				}, 2000) // todo: tweak this to the duration of the gif?
-			})
-		}, delay * 1000)
-	}
 }
 </script>
 
@@ -361,14 +310,6 @@ blink {
 	to {
 		visibility: hidden;
 	}
-}
-
-.ufo {
-	position: absolute;
-	/* z-index: -1; */
-	top: 0;
-	left: 0;
-	max-width: 100%;
 }
 
 .key {
