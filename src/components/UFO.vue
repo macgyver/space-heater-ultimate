@@ -61,6 +61,8 @@ export default class UFO extends Vue {
 	/* z-index: -1; */
 	top: 0;
 	left: 0;
-	max-width: 100%;
+	max-width: 100vw;
+	max-height: 100vw;
+	pointer-events: none;
 }
 </style>

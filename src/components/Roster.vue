@@ -241,7 +241,7 @@ export default class Roster extends Vue {
 .roster {
 	text-align: center;
 	color: orange;
-	--gutter-size: 2em;
+	--gutter-size: 4em;
 }
 
 header {
@@ -254,7 +254,7 @@ header {
 }
 
 h1 {
-	flex-shrink: 0;
+	/* flex-shrink: 0; */
 	margin: 1em;
 }
 
@@ -263,25 +263,60 @@ h1 {
 	max-width: 100%;
 }
 
-.player-image {
-	width: 100%;
+nav {
+	color: fuchsia;
+	flex: none;
+	margin-right: 1em;
+	position: absolute;
+	left: var(--gutter-size);
+	white-space: nowrap;
+	text-align: left;
+}
+
+nav a {
+	color: inherit;
+}
+
+nav a:visited {
+	color: blue;
+}
+
+.lightning {
+	position: absolute;
+	right: 0;
+}
+
+@media (max-width: 768px) {
+	.roster {
+		--gutter-size: 2em;
+	}
+
+	header {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	[src*='skulltrumpet']:not(:first-of-type) {
+	}
+
+	nav {
+		transform: translateY(-100%);
+	}
+
+	.lightning {
+		transform: translateY(100%);
+	}
 }
 
 .player-list {
 	display: grid;
-	gap: var(--gutter-size);
+	gap: calc(var(--gutter-size) / 2);
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.player-name {
-	font-weight: normal;
-	font-size: 1em;
-	background: purple;
-	display: inline;
+	padding: 0;
 }
 
 main {
-	padding: 4em;
+	padding: var(--gutter-size);
 	background-image: url('../assets/stars.jpg');
 }
 
@@ -332,20 +367,5 @@ blink {
 marquee {
 	font-style: italic;
 	font-family: 'Arial Black', Gadget, sans-serif;
-}
-
-nav {
-	color: fuchsia;
-	flex: none;
-	margin-right: 1em;
-	position: absolute;
-	left: var(--gutter-size);
-	white-space: nowrap;
-	text-align: left;
-}
-
-.lightning {
-	position: absolute;
-	right: 0;
 }
 </style>
