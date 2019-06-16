@@ -4,7 +4,7 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="team-.html">Team Bio</a>
+						<a href="team.html">Team Bio</a>
 					</li>
 					<li>
 						<a href="schedule.html">Tournament Schedule</a>
@@ -24,14 +24,14 @@
 				<img src="../assets/redspacewebsite.gif" />
 			</h1>
 			<img src="../assets/skulltrumpet.gif" />
+			<img src="../assets/lightning.gif" class="lightning" />
 		</header>
 		<marquee>Keeping things warm...</marquee>
 		<img src="../assets/computer.gif" />
 		<img src="../assets/floppy.gif" />
 		<img src="../assets/flashinglight.gif" height="50" width="50" />
 		<img src="../assets/spaceshuttle.gif" />
-		<img src="../assets/flames.gif" />
-		<img src="../assets/lightning.gif" />
+
 		<section>
 			<h1 class="roster-heading">2019 Roster</h1>
 			<dl class="key">
@@ -42,18 +42,15 @@
 				<dd class="key-meaning">Captain</dd>
 			</dl>
 
-			<div class="player-list">
-				<article v-for="p in players" :key="p.firstName + p.lastName">
-					<h1 class="player-name">
-						<span v-if="p.coach">Coach</span>
-						{{ p.firstName }}
-						{{ p.lastName }}
-						<span v-if="p.rookie">*</span>
-						<span v-if="p.captain">**</span>
-					</h1>
-					<img class="player-image" :src="getPlayerImgSrc(p.imageFile)" />
-				</article>
-			</div>
+			<ul class="player-list">
+				<li v-for="p in players" :key="p.firstName + p.lastName">
+					<Player v-bind="p" />
+				</li>
+			</ul>
+
+			<img src="../assets/flames.gif" />
+			<img src="../assets/flames.gif" />
+			<img src="../assets/flames.gif" />
 		</section>
 
 		<UFO />
@@ -62,10 +59,12 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
+import Player from './Player.vue'
 import UFO from './UFO.vue'
 
 @Component({
 	components: {
+		Player,
 		UFO,
 	},
 })
@@ -234,11 +233,6 @@ export default class Roster extends Vue {
 	].sort(function() {
 		return 0.5 - Math.random()
 	})
-
-	getPlayerImgSrc(file: string) {
-		const images = require.context('../assets/', false)
-		return images('./' + file)
-	}
 }
 </script>
 
@@ -348,5 +342,10 @@ nav {
 	left: var(--gutter-size);
 	white-space: nowrap;
 	text-align: left;
+}
+
+.lightning {
+	position: absolute;
+	right: 0;
 }
 </style>
