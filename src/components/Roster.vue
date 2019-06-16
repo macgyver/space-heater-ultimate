@@ -1,6 +1,22 @@
 <template>
 	<main class="roster" ref="roster">
 		<header>
+			<nav>
+				<ol>
+					<li>
+						<a href="404.html">Team Bio</a>
+					</li>
+					<li>
+						<a href="404.html">Tournament Schedule</a>
+					</li>
+					<li>
+						<a href="404.html">Roster Archives</a>
+					</li>
+					<li>
+						<a href="404.html">Join our mailing list!</a>
+					</li>
+				</ol>
+			</nav>
 			<img src="../assets/skulltrumpet.gif" />
 			<h1>
 				Space Heater <blink>Ultimate</blink>
@@ -9,12 +25,30 @@
 			</h1>
 			<img src="../assets/skulltrumpet.gif" />
 		</header>
-		<marquee>This text will appear as a marquee</marquee>
+		<marquee>Keeping things warm...</marquee>
+		<img src="../assets/computer.gif" />
+		<img src="../assets/floppy.gif" />
+		<img src="../assets/flashinglight.gif" height="50" width="50" />
+		<img src="../assets/spaceshuttle.gif" />
 		<section>
-			<h1>2019 Roster</h1>
+			<h1 class="roster-heading">2019 Roster</h1>
+			<dl class="key">
+				<dt class="key-symbol">*</dt>
+				<dd class="key-meaning">Rookie</dd>
+
+				<dt class="key-symbol">**</dt>
+				<dd class="key-meaning">Captain</dd>
+			</dl>
+
 			<div class="player-list">
 				<article v-for="p in players" :key="p.firstName + p.lastName">
-					<h1 class="player-name">{{ p.firstName }} {{ p.lastName }}</h1>
+					<h1 class="player-name">
+						<span v-if="p.coach">Coach</span>
+						{{ p.firstName }}
+						{{ p.lastName }}
+						<span v-if="p.rookie">*</span>
+						<span v-if="p.captain">**</span>
+					</h1>
 					<img class="player-image" :src="getPlayerImgSrc(p.imageFile)" />
 				</article>
 			</div>
@@ -52,64 +86,82 @@ export default class Roster extends Vue {
 	// todo: randomize order, insert gifs
 	players = [
 		{
+			firstName: 'Ty',
+			lastName: 'Aderhold',
+			imageFile: 'ty.png',
+			coach: true,
+		},
+		{
 			firstName: 'Ella',
 			lastName: 'Juengst',
 			imageFile: 'ella.png',
+			rookie: true,
 		},
 		{
 			firstName: 'Theresa',
 			lastName: 'Hackett',
 			imageFile: 'hackett.png',
+			rookie: true,
 		},
 		{
 			firstName: 'Pete',
 			lastName: 'MacArthur',
 			imageFile: 'pete.png',
+			rookie: true,
 		},
 		{
 			firstName: 'Sydney',
 			lastName: 'Rehder',
 			imageFile: 'sydney.jpg',
+			rookie: true,
 		},
 		{
 			firstName: 'Clea',
 			lastName: 'Poklemba',
 			imageFile: 'clea.jpg',
+			rookie: true,
 		},
 		{
 			firstName: 'Megan',
 			lastName: 'McVey',
 			imageFile: 'mcvey.jpg',
+			rookie: true,
 		},
 		{
 			firstName: 'Ryan',
 			lastName: 'Cooper',
 			imageFile: 'ryan.png',
+			rookie: true,
 		},
 		{
 			firstName: 'Mia',
 			lastName: 'Greenwald',
 			imageFile: 'meeee.jpg',
+			rookie: true,
 		},
 		{
 			firstName: 'Hannah',
 			lastName: 'Boone',
 			imageFile: 'hannah.jpg',
+			rookie: true,
 		},
 		{
 			firstName: 'Gabe',
 			lastName: 'Westergren',
 			imageFile: 'gabe.jpg',
+			rookie: true,
 		},
 		{
 			firstName: 'Beau',
 			lastName: 'De Koninck',
 			imageFile: 'beau.png',
+			rookie: true,
 		},
 		{
 			firstName: 'Ashley',
 			lastName: 'Sylvester',
 			imageFile: 'ashley.png',
+			rookie: true,
 		},
 		{
 			firstName: 'David “Duke”',
@@ -150,6 +202,7 @@ export default class Roster extends Vue {
 			firstName: 'Alan',
 			lastName: 'Kolick',
 			imageFile: 'alan.png',
+			captain: true,
 		},
 		{
 			firstName: 'Kat',
@@ -165,6 +218,7 @@ export default class Roster extends Vue {
 			firstName: 'Jenny',
 			lastName: 'Fey',
 			imageFile: 'jenny.png',
+			captain: true,
 		},
 		{
 			firstName: 'Pat',
@@ -242,9 +296,11 @@ export default class Roster extends Vue {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 .roster {
 	text-align: center;
+	color: orange;
+	--gutter-size: 2em;
 }
 
 header {
@@ -253,6 +309,7 @@ header {
 	margin: 0 auto;
 	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 	color: yellow;
+	position: static; /* so the nav is relative to the document */
 }
 
 h1 {
@@ -271,8 +328,8 @@ h1 {
 
 .player-list {
 	display: grid;
-	gap: 2em;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: var(--gutter-size);
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .player-name {
@@ -308,8 +365,49 @@ blink {
 
 .ufo {
 	position: absolute;
+	/* z-index: -1; */
 	top: 0;
 	left: 0;
 	max-width: 100%;
+}
+
+.key {
+	margin-top: 0;
+	display: inline-grid;
+	grid-template-rows: repeat(2, auto);
+	grid-template-columns: repeat(2, auto);
+}
+
+.key-symbol {
+	text-align: right;
+}
+
+.key-symbol::after {
+	content: '=';
+	margin: 0 0.3em;
+}
+
+.key-meaning {
+	display: inline;
+	margin: 0;
+}
+
+.roster-heading {
+	margin-bottom: 0;
+}
+
+marquee {
+	font-style: italic;
+	font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+nav {
+	color: fuchsia;
+	flex: none;
+	margin-right: 1em;
+	position: absolute;
+	left: var(--gutter-size);
+	white-space: nowrap;
+	text-align: left;
 }
 </style>
