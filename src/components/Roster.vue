@@ -17,13 +17,13 @@
 					</li>
 				</ul>
 			</nav>
-			<img src="../assets/skulltrumpet.gif" />
+			<img src="../assets/doot.gif" />
 			<h1>
 				Space Heater <blink>Ultimate</blink>
 				<br />
 				<img src="../assets/redspacewebsite.gif" />
 			</h1>
-			<img src="../assets/skulltrumpet.gif" />
+			<img src="../assets/doot.gif" />
 			<img src="../assets/lightning.gif" class="lightning" />
 		</header>
 		<marquee>Keeping things warm...</marquee>
@@ -83,25 +83,25 @@ export default class Roster extends Vue {
 		{
 			firstName: 'Ty',
 			lastName: 'Aderhold',
-			imageFile: 'ty.png',
+			imageFile: 'ty.jpg',
 			coach: true,
 		},
 		{
 			firstName: 'Ella',
 			lastName: 'Juengst',
-			imageFile: 'ella.png',
+			imageFile: 'ella.jpg',
 			rookie: true,
 		},
 		{
 			firstName: 'Theresa',
 			lastName: 'Hackett',
-			imageFile: 'hackett.png',
+			imageFile: 'hackett.jpg',
 			rookie: true,
 		},
 		{
 			firstName: 'Pete',
 			lastName: 'MacArthur',
-			imageFile: 'pete.png',
+			imageFile: 'pete.jpg',
 			rookie: true,
 		},
 		{
@@ -125,7 +125,7 @@ export default class Roster extends Vue {
 		{
 			firstName: 'Ryan',
 			lastName: 'Cooper',
-			imageFile: 'ryan.png',
+			imageFile: 'ryan.jpg',
 			rookie: true,
 		},
 		{
@@ -149,13 +149,13 @@ export default class Roster extends Vue {
 		{
 			firstName: 'Beau',
 			lastName: 'De Koninck',
-			imageFile: 'beau.png',
+			imageFile: 'beau.jpg',
 			rookie: true,
 		},
 		{
 			firstName: 'Ashley',
 			lastName: 'Sylvester',
-			imageFile: 'ashley.png',
+			imageFile: 'ashley.jpg',
 			rookie: true,
 		},
 		{
@@ -181,28 +181,28 @@ export default class Roster extends Vue {
 		{
 			firstName: 'Jonny',
 			lastName: 'Malks',
-			imageFile: 'jonny.png',
+			imageFile: 'jonny.jpg',
 		},
 		{
 			firstName: 'Georgia',
 			lastName: 'Bosscher',
-			imageFile: 'georgia.png',
+			imageFile: 'georgia.jpg',
 		},
 		{
 			firstName: 'Anthony',
 			lastName: 'McLean',
-			imageFile: 'anthony.png',
+			imageFile: 'anthony.jpg',
 		},
 		{
 			firstName: 'Alan',
 			lastName: 'Kolick',
-			imageFile: 'alan.png',
+			imageFile: 'alan.jpg',
 			captain: true,
 		},
 		{
 			firstName: 'Kat',
 			lastName: 'Sanz',
-			imageFile: 'kat.png',
+			imageFile: 'kat.jpg',
 		},
 		{
 			firstName: 'Erik',
@@ -212,7 +212,7 @@ export default class Roster extends Vue {
 		{
 			firstName: 'Jenny',
 			lastName: 'Fey',
-			imageFile: 'jenny.png',
+			imageFile: 'jenny.jpg',
 			captain: true,
 		},
 		{
@@ -258,7 +258,7 @@ h1 {
 	margin: 1em;
 }
 
-[src*='skulltrumpet']:not(:first-of-type) {
+[src*='doot']:not(:first-of-type) {
 	transform: scaleX(-1);
 	max-width: 100%;
 }
@@ -296,7 +296,7 @@ nav a:visited {
 		justify-content: center;
 	}
 
-	[src*='skulltrumpet']:not(:first-of-type) {
+	[src*='doot']:not(:first-of-type) {
 	}
 
 	nav {
