@@ -3,9 +3,9 @@
 # abort on errors
 set -e
 
-if [ -z "$1" ] then
+if [ -z "$1" ]; then
 	echo "ERROR: No tag name supplied"
-	exit
+	exit 1
 fi
 
 git fetch
