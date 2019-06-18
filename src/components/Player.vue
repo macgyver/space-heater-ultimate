@@ -51,8 +51,12 @@ export default class Player extends Vue {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+.player {
+	position: relative;
+	z-index: 1; /* this is the max z-index the ufo will take, and the ufo appears after the players in DOM order */
+}
+
 .player:target {
 	outline: 0.3em double cyan;
 }

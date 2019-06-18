@@ -14,8 +14,8 @@ function randint(max: number, min = 0) {
 
 @Component
 export default class UFO extends Vue {
-	minDelay = 10
-	maxDelay = 20
+	minDelay = 0
+	maxDelay = 0
 	show = false
 	style = {
 		height: '400px',
@@ -23,7 +23,7 @@ export default class UFO extends Vue {
 		top: '0',
 		left: '0',
 		transform: '',
-		zIndex: '0',
+		zIndex: '1',
 	}
 	// ufo = document.createElement('img')
 
@@ -59,9 +59,9 @@ export default class UFO extends Vue {
 				height: `${size}px`,
 				width: `${size}px`,
 				transform: `rotate(${rot}deg) scaleX(${flip})`,
-				zIndex: `${randint(1) ? 0 : -1}`,
+				zIndex: `${randint(2) > 0 ? 1 : 0}`, // appear before the players mostly, but sometimes behind
 			}
-			// console.debug('ufo', { ...this.style })
+			console.debug('ufo', { ...this.style })
 
 			setTimeout((ts: number) => {
 				this.show = false

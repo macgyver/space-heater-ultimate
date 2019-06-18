@@ -1,5 +1,5 @@
 <template>
-	<main class="roster" ref="roster">
+	<main class="roster">
 		<header>
 			<nav>
 				<ul>
@@ -250,6 +250,8 @@ export default class Roster extends Vue {
 
 <style>
 .roster {
+	padding: var(--gutter-size);
+	background-image: url('../assets/stars.jpg');
 	text-align: center;
 	color: orange;
 	--gutter-size: 4em;
@@ -323,16 +325,8 @@ nav a:visited {
 	padding: 0;
 }
 
-main {
-	padding: var(--gutter-size);
-	background-image: url('../assets/stars.jpg');
-	/* set the layer so the ufo can appear in front of / behind context */
-	position: relative;
-	z-index: -1;
-}
-
 /* @media (prefers-color-scheme: light) {
-	main {
+	.roster {
 		background-image: url('../assets/circuitboard.jpg')
 	}
 
