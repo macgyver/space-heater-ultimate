@@ -19,11 +19,13 @@ npm run build
 cd dist
 
 # if you are deploying to a custom domain
-# echo 'spaceheaterultimate.com' > CNAME << instead, I just added a CNAME file to the public folder..
+echo 'spaceheaterultimate.com' > CNAME
 
 # git init << not sure what this is for
 git add -A
 git commit -m "deploy $1"
+
+# todo: make a tag?
 
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
