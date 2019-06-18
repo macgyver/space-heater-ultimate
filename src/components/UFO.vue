@@ -1,13 +1,7 @@
 <template>
-	<aside>
+	<aside class="ufo">
 		<link rel="prefetch" href="../assets/ufo.gif" />
-		<img
-			:style="style"
-			class="img"
-			src="../assets/ufo.gif"
-			ref="img"
-			v-if="show"
-		/>
+		<img :style="style" class="ufo__img" src="../assets/ufo.gif" v-if="show" />
 	</aside>
 </template>
 
@@ -67,9 +61,7 @@ export default class UFO extends Vue {
 				transform: `rotate(${rot}deg) scaleX(${flip})`,
 				zIndex: `${randint(1) ? 0 : -1}`,
 			}
-			console.debug('ufo', { ...this.style })
-
-			// const $img = this.$refs.img as HTMLImageElement
+			// console.debug('ufo', { ...this.style })
 
 			setTimeout((ts: number) => {
 				this.show = false
@@ -80,13 +72,9 @@ export default class UFO extends Vue {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.img {
+<style>
+.ufo__img {
 	position: absolute;
-	/* z-index: -1; */
-	top: 0;
-	left: 0;
 	max-width: 100vw;
 	max-height: 100vw;
 	pointer-events: none;

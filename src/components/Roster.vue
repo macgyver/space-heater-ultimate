@@ -248,7 +248,6 @@ export default class Roster extends Vue {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .roster {
 	text-align: center;
@@ -306,9 +305,6 @@ nav a:visited {
 	header {
 		flex-wrap: wrap;
 		justify-content: center;
-	}
-
-	[src*='doot']:not(:first-of-type) {
 	}
 
 	nav {
