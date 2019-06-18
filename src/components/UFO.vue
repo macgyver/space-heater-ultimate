@@ -2,8 +2,7 @@
 	<aside>
 		<link rel="prefetch" href="../assets/ufo.gif" />
 		<img
-			width="400"
-			height="400"
+			:style="style"
 			class="img"
 			src="../assets/ufo.gif"
 			ref="img"
@@ -16,12 +15,22 @@
 import { Component, Prop, Vue } from 'vue-property-decorator'
 
 function randint(max: number, min = 0) {
-	return Math.floor(Math.random() * Math.floor(max - min)) + min
+	return Math.floor(Math.random() * Math.floor(max - min + 1)) + min
 }
 
 @Component
 export default class UFO extends Vue {
+	minDelay = 10
+	maxDelay = 20
 	show = false
+	style = {
+		height: '400px',
+		width: '400px',
+		top: '0',
+		left: '0',
+		transform: '',
+		zIndex: '0',
+	}
 	// ufo = document.createElement('img')
 
 	async mounted() {
@@ -29,26 +38,43 @@ export default class UFO extends Vue {
 	}
 
 	schedule() {
-		const delay = randint(30, 10)
+		const delay = randint(this.maxDelay, this.minDelay)
 
 		setTimeout((ts: number) => {
 			this.show = true
 
-			Vue.nextTick(() => {
-				// todo: make top/bottom/left/right somewhat random (maybe just flip between left and right side?)
-				// also vary the z-index
-				const x = 100
-				const y = 100
-				const $img = this.$refs.img as HTMLImageElement
-				$img.style.top = `${x}px`
-				$img.style.left = `${y}px`
-				console.debug('adding img', $img, x, y, ts)
+			const size = randint(
+				Math.min(800, document.documentElement.clientWidth),
+				100,
+			)
+			const top = randint(
+				window.scrollY + document.documentElement.clientHeight - size,
+				window.scrollY,
+			)
+			const left = randint(
+				window.scrollX + document.documentElement.clientWidth - size,
+				window.scrollX,
+			)
+			const rot = randint(45, -45)
+			const flip = randint(1) ? 1 : -1
 
-				setTimeout((ts: number) => {
-					this.show = false
-					this.schedule()
-				}, 2000)
-			})
+			// todo: vary the z-index so it appears behind the pictures sometimes??
+			this.style = {
+				top: `${top}px`,
+				left: `${left}px`,
+				height: `${size}px`,
+				width: `${size}px`,
+				transform: `rotate(${rot}deg) scaleX(${flip})`,
+				zIndex: `${randint(1) ? 0 : -1}`,
+			}
+			console.debug('ufo', { ...this.style })
+
+			// const $img = this.$refs.img as HTMLImageElement
+
+			setTimeout((ts: number) => {
+				this.show = false
+				this.schedule()
+			}, 2000)
 		}, delay * 1000)
 	}
 }

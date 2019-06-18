@@ -230,6 +230,18 @@ export default class Roster extends Vue {
 			lastName: 'Khalifa',
 			imageFile: 'kyle.jpg',
 		},
+		// {
+		// 	firstName: 'Ryan',
+		// 	lastName: 'Nam',
+		// 	imageFile: 'nam.jpg',
+		// 	practice: true,
+		// },
+		// {
+		// 	firstName: 'Ryan',
+		// 	lastName: 'Thornton',
+		// 	imageFile: 'rt.jpg',
+		// 	practice: true,
+		// },
 	].sort(function() {
 		return 0.5 - Math.random()
 	})
@@ -318,6 +330,9 @@ nav a:visited {
 main {
 	padding: var(--gutter-size);
 	background-image: url('../assets/stars.jpg');
+	/* set the layer so the ufo can appear in front of / behind context */
+	position: relative;
+	z-index: -1;
 }
 
 /* @media (prefers-color-scheme: light) {

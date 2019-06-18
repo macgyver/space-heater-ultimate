@@ -1,6 +1,6 @@
 <template>
 	<article :id="id" class="player" ref="el">
-		<h1 class="player-name">
+		<h1 class="name">
 			<span v-if="coach">Coach</span>
 			{{ firstName }}
 			{{ lastName }}
@@ -57,7 +57,13 @@ export default class Player extends Vue {
 	outline: 0.3em double cyan;
 }
 
+.name {
+	display: inline;
+	background: purple;
+}
+
 .img {
 	width: 100%;
+	max-width: calc(100vw - 2 * var(--gutter-size));
 }
 </style>
