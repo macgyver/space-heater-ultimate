@@ -14,8 +14,8 @@ function randint(max: number, min = 0) {
 
 @Component
 export default class UFO extends Vue {
-	minDelay = 0
-	maxDelay = 0
+	minDelay = 10
+	maxDelay = 20
 	show = false
 	style = {
 		height: '400px',
@@ -24,8 +24,9 @@ export default class UFO extends Vue {
 		left: '0',
 		transform: '',
 		zIndex: '1',
+		maxWidth: '100vw',
+		maxHeight: '100vw',
 	}
-	// ufo = document.createElement('img')
 
 	async mounted() {
 		this.schedule()
@@ -52,7 +53,11 @@ export default class UFO extends Vue {
 			const rot = randint(45, -45)
 			const flip = randint(1) ? 1 : -1
 
-			// todo: vary the z-index so it appears behind the pictures sometimes??
+			// prevent rotated corners from overflowing the container
+			// todo: could eke out a few more pixels if we use the rot value to figure out the actual size,
+			//       this is just the max it could possibly be, i.e. when rotated a multiple of 45°
+			const hypot = Math.hypot(size, size)
+
 			this.style = {
 				top: `${top}px`,
 				left: `${left}px`,
@@ -60,8 +65,10 @@ export default class UFO extends Vue {
 				width: `${size}px`,
 				transform: `rotate(${rot}deg) scaleX(${flip})`,
 				zIndex: `${randint(2) > 0 ? 1 : 0}`, // appear before the players mostly, but sometimes behind
+				maxHeight: `${hypot}px`,
+				maxWidth: `${hypot}px`,
 			}
-			console.debug('ufo', { ...this.style })
+			// console.debug('ufo', { ...this.style })
 
 			setTimeout((ts: number) => {
 				this.show = false
@@ -75,8 +82,6 @@ export default class UFO extends Vue {
 <style>
 .ufo__img {
 	position: absolute;
-	max-width: 100vw;
-	max-height: 100vw;
 	pointer-events: none;
 }
 </style>

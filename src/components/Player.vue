@@ -1,5 +1,6 @@
 <template>
 	<article :id="id" class="player" ref="el">
+		<img src="../assets/hot.gif" class="player__hot" hidden />
 		<h1 class="player__name">
 			<span v-if="coach">Coach</span>
 			{{ firstName }}
@@ -7,6 +8,7 @@
 			<span v-if="rookie">*</span>
 			<span v-if="captain">**</span>
 		</h1>
+		<img src="../assets/hot.gif" class="player__hot" hidden />
 		<a :href="'#' + id">
 			<img class="player__img" :src="getPlayerImgSrc(imageFile)" />
 		</a>
@@ -61,9 +63,23 @@ export default class Player extends Vue {
 	outline: 0.3em double cyan;
 }
 
+.player__hot {
+	vertical-align: middle;
+}
+
+.player:target > .player__hot {
+	display: initial;
+}
+
 .player__name {
 	display: inline;
 	background: purple;
+	font-weight: normal;
+}
+
+.player:hover > .player__name,
+.player:focus > .player__name {
+	font-weight: bold;
 }
 
 .player__img {
