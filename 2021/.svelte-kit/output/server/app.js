@@ -182,9 +182,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: "/2021/_app/start-d735dce4.js",
+      file: "/2021/_app/start-d9bba08e.js",
       css: ["/2021/_app/assets/start-a8cd1609.css"],
-      js: ["/2021/_app/start-d735dce4.js", "/2021/_app/chunks/vendor-3e67615a.js"]
+      js: ["/2021/_app/start-d9bba08e.js", "/2021/_app/chunks/vendor-3e67615a.js"]
     },
     fetched: void 0,
     floc: false,
@@ -281,7 +281,7 @@ const module_lookup = {
     return index;
   })
 };
-const metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/2021/_app/pages/__layout.svelte-7647f932.js", "css": ["/2021/_app/assets/pages/__layout.svelte-565827e4.css"], "js": ["/2021/_app/pages/__layout.svelte-7647f932.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null }, ".svelte-kit/build/components/error.svelte": { "entry": "/2021/_app/error.svelte-1b263411.js", "css": [], "js": ["/2021/_app/error.svelte-1b263411.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null }, "src/routes/index.svelte": { "entry": "/2021/_app/pages/index.svelte-ed1b7b19.js", "css": ["/2021/_app/assets/pages/index.svelte-b205bf21.css"], "js": ["/2021/_app/pages/index.svelte-ed1b7b19.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null }, "src/routes/about.svelte": { "entry": "/2021/_app/pages/about.svelte-fa66754f.js", "css": ["/2021/_app/assets/pages/about.svelte-4db5be0d.css"], "js": ["/2021/_app/pages/about.svelte-fa66754f.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null }, "src/routes/todos/index.svelte": { "entry": "/2021/_app/pages/todos/index.svelte-c9fc8367.js", "css": ["/2021/_app/assets/pages/todos/index.svelte-05e41044.css"], "js": ["/2021/_app/pages/todos/index.svelte-c9fc8367.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null } };
+const metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/2021/_app/pages/__layout.svelte-5f0564de.js", "css": ["/2021/_app/assets/pages/__layout.svelte-565827e4.css"], "js": ["/2021/_app/pages/__layout.svelte-5f0564de.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null }, ".svelte-kit/build/components/error.svelte": { "entry": "/2021/_app/error.svelte-1b263411.js", "css": [], "js": ["/2021/_app/error.svelte-1b263411.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null }, "src/routes/index.svelte": { "entry": "/2021/_app/pages/index.svelte-ed1b7b19.js", "css": ["/2021/_app/assets/pages/index.svelte-b205bf21.css"], "js": ["/2021/_app/pages/index.svelte-ed1b7b19.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null }, "src/routes/about.svelte": { "entry": "/2021/_app/pages/about.svelte-fa66754f.js", "css": ["/2021/_app/assets/pages/about.svelte-4db5be0d.css"], "js": ["/2021/_app/pages/about.svelte-fa66754f.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null }, "src/routes/todos/index.svelte": { "entry": "/2021/_app/pages/todos/index.svelte-c9fc8367.js", "css": ["/2021/_app/assets/pages/todos/index.svelte-05e41044.css"], "js": ["/2021/_app/pages/todos/index.svelte-c9fc8367.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null } };
 async function load_component(file) {
   return {
     module: await module_lookup[file](),
@@ -357,7 +357,7 @@ var logo = "/2021/_app/assets/space-heater.1fefce1a.png";
 var Header_svelte_svelte_type_style_lang = "img.svelte-iwc3fq{float:right;max-width:25%;height:auto}";
 const css$4 = {
   code: "img.svelte-iwc3fq{float:right;max-width:25%;height:auto}",
-  map: `{"version":3,"file":"Header.svelte","sources":["Header.svelte"],"sourcesContent":["<script lang=\\"ts\\">import logo from './space-heater.png';\\n<\/script>\\n\\n<header>\\n\\t<img src={logo} width=\\"196\\" height=\\"196\\" alt=\\"\\" />\\n\\t<h1>Space Heater</h1>\\n\\t<h2>Elite Mixed Club Ultimate Team</h2>\\n\\t<h3>Washington, DC</h3>\\n\\n\\t<nav>\\n\\t\\t<ul>\\n\\t\\t\\t<li><a href=\\"https://twitter.com/spaceheaterulti/\\">Twitter \u{1F426}</a></li>\\n\\t\\t\\t<li><a href=\\"2019/\\">2019 team</a></li>\\n\\t\\t</ul>\\n\\n\\t\\t<!-- <img src={logo} alt=\\"SvelteKit\\" />\\n\\t\\t<ul>\\n\\t\\t\\t<li class:active={$page.path === '/'}><a sveltekit:prefetch href=\\"/\\">Home</a></li>\\n\\t\\t\\t<li class:active={$page.path === '/about'}><a sveltekit:prefetch href=\\"/about\\">About</a></li>\\n\\t\\t\\t<li class:active={$page.path === '/todos'}><a sveltekit:prefetch href=\\"/todos\\">Todos</a></li>\\n\\t\\t</ul> -->\\n\\t</nav>\\n\\t<hr size=\\"3\\" />\\n</header>\\n\\n<style>\\n\\timg {\\n\\t\\tfloat: right;\\n\\t\\tmax-width: 25%;\\n\\t\\theight: auto;\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AA0BC,GAAG,cAAC,CAAC,AACJ,KAAK,CAAE,KAAK,CACZ,SAAS,CAAE,GAAG,CACd,MAAM,CAAE,IAAI,AACb,CAAC"}`
+  map: `{"version":3,"file":"Header.svelte","sources":["Header.svelte"],"sourcesContent":["<script lang=\\"ts\\">import logo from './space-heater.png';\\n<\/script>\\n\\n<header>\\n\\t<img src={logo} width=\\"196\\" height=\\"196\\" alt=\\"\\" />\\n\\t<h1>Space Heater</h1>\\n\\t<h2>Elite Mixed Club Ultimate Team</h2>\\n\\t<h3>Washington, DC</h3>\\n\\n\\t<nav>\\n\\t\\t<ul>\\n\\t\\t\\t<li><a href=\\"https://twitter.com/spaceheaterulti/\\">Twitter \u{1F426}</a></li>\\n\\t\\t\\t<!-- <li><a href=\\"2019/\\">2019 team</a></li> -->\\n\\t\\t</ul>\\n\\n\\t\\t<!-- <img src={logo} alt=\\"SvelteKit\\" />\\n\\t\\t<ul>\\n\\t\\t\\t<li class:active={$page.path === '/'}><a sveltekit:prefetch href=\\"/\\">Home</a></li>\\n\\t\\t\\t<li class:active={$page.path === '/about'}><a sveltekit:prefetch href=\\"/about\\">About</a></li>\\n\\t\\t\\t<li class:active={$page.path === '/todos'}><a sveltekit:prefetch href=\\"/todos\\">Todos</a></li>\\n\\t\\t</ul> -->\\n\\t</nav>\\n\\t<hr size=\\"3\\" />\\n</header>\\n\\n<style>\\n\\timg {\\n\\t\\tfloat: right;\\n\\t\\tmax-width: 25%;\\n\\t\\theight: auto;\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AA0BC,GAAG,cAAC,CAAC,AACJ,KAAK,CAAE,KAAK,CACZ,SAAS,CAAE,GAAG,CACd,MAAM,CAAE,IAAI,AACb,CAAC"}`
 };
 const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$4);
@@ -367,7 +367,7 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 	<h3>Washington, DC</h3>
 
 	<nav><ul><li><a href="${"https://twitter.com/spaceheaterulti/"}">Twitter \u{1F426}</a></li>
-			<li><a href="${"2019/"}">2019 team</a></li></ul>
+			</ul>
 
 		</nav>
 	<hr size="${"3"}">
