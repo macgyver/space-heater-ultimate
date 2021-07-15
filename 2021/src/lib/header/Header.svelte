@@ -29,5 +29,8 @@
 		float: right;
 		max-width: 25%;
 		height: auto;
+		padding: 10px;
+		background: white;
+		border: 1px solid var(--fg-color);
 	}
 </style>
