@@ -25,6 +25,7 @@
 	import nada from './nada.png'
 	import hannah from './hannah.png'
 	import carly from './carly.png'
+	// import ryan from './ryan.png'
 	import conner from './conner.png'
 	import gabe from './gabe.png'
 	import gabewebster from './gabewebster.png'
@@ -128,6 +129,13 @@
 			link: 'https://en.wikipedia.org/wiki/Irritator',
 			reason: 'a problem',
 			notes: '“returner”',
+		},
+		{
+			name: 'AJ Merriman',
+			picture: null,
+			dinosaur: '',
+			reason: '',
+			notes: '1st year',
 		},
 		{
 			name: 'Amber Sinicrope',
@@ -251,6 +259,13 @@
 			notes: 'practice squad',
 		},
 		{
+			name: 'Ryan Cooper',
+			picture: null,
+			dinosaur: '',
+			reason: '',
+			notes: 'practice squad',
+		},
+		{
 			name: 'Conner Fox',
 			picture: conner,
 			dinosaur: 'Plesiosaurus',
@@ -264,6 +279,13 @@
 			dinosaur: 'Struthiomimus',
 			link: 'https://en.wikipedia.org/wiki/Struthiomimus',
 			reason: 'funky',
+			notes: 'practice squad',
+		},
+		{
+			name: 'Miles Grovic',
+			picture: null,
+			dinosaur: '',
+			reason: '',
 			notes: 'practice squad',
 		},
 		{
