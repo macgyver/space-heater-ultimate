@@ -12,8 +12,10 @@ git fetch
 git checkout master
 git rebase origin/master
 
-# build
-npm run build
+# build pages
+rm -r docs/*
+(cd 2019; npm run build)
+(cd 2021; svelte-kit build; mv build ../docs/2021)
 
 # navigate into the build output directory
 cd docs
@@ -25,7 +27,7 @@ echo 'spaceheaterultimate.com' > CNAME
 git add -A
 git commit -m "deploy $1"
 
-# todo: make a tag?
+git tag $1
 
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
@@ -33,6 +35,6 @@ git commit -m "deploy $1"
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
-git push
+git push; git push --tags
 
 cd -
