@@ -15,7 +15,7 @@ git rebase origin/master
 # build pages
 rm -r docs/*
 (cd 2019; npm run build)
-(cd 2021; npx svelte-kit build; mv build ../docs/2021; touch ../docs/2021/.nojekyll)
+(cd 2021; npx svelte-kit build; mv build ../docs/2021; touch ../docs/.nojekyll)
 
 # navigate into the build output directory
 cd docs
