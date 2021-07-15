@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Space Heater Ultimate</title>
 </svelte:head>
 
 <div>
