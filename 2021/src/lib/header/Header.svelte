@@ -11,7 +11,7 @@
 	<nav>
 		<ul>
 			<li><a href="https://twitter.com/spaceheaterulti/">Twitter 🐦</a></li>
-			<li><a href="2019/">2019 team</a></li>
+			<!-- <li><a href="2019/">2019 team</a></li> -->
 		</ul>
 
 		<!-- <img src={logo} alt="SvelteKit" />
