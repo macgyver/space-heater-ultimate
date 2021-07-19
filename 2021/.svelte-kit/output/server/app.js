@@ -182,9 +182,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: "/2021/_app/start-f5e46dd9.js",
+      file: "/2021/_app/start-394a4b08.js",
       css: ["/2021/_app/assets/start-a8cd1609.css"],
-      js: ["/2021/_app/start-f5e46dd9.js", "/2021/_app/chunks/vendor-3e67615a.js"]
+      js: ["/2021/_app/start-394a4b08.js", "/2021/_app/chunks/vendor-6583ead2.js"]
     },
     fetched: void 0,
     floc: false,
@@ -281,7 +281,7 @@ const module_lookup = {
     return index;
   })
 };
-const metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/2021/_app/pages/__layout.svelte-148043ab.js", "css": ["/2021/_app/assets/pages/__layout.svelte-2febf179.css"], "js": ["/2021/_app/pages/__layout.svelte-148043ab.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null }, ".svelte-kit/build/components/error.svelte": { "entry": "/2021/_app/error.svelte-1b263411.js", "css": [], "js": ["/2021/_app/error.svelte-1b263411.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null }, "src/routes/index.svelte": { "entry": "/2021/_app/pages/index.svelte-936de7dc.js", "css": ["/2021/_app/assets/pages/index.svelte-b205bf21.css"], "js": ["/2021/_app/pages/index.svelte-936de7dc.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null }, "src/routes/about.svelte": { "entry": "/2021/_app/pages/about.svelte-fa66754f.js", "css": ["/2021/_app/assets/pages/about.svelte-4db5be0d.css"], "js": ["/2021/_app/pages/about.svelte-fa66754f.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null }, "src/routes/todos/index.svelte": { "entry": "/2021/_app/pages/todos/index.svelte-c9fc8367.js", "css": ["/2021/_app/assets/pages/todos/index.svelte-05e41044.css"], "js": ["/2021/_app/pages/todos/index.svelte-c9fc8367.js", "/2021/_app/chunks/vendor-3e67615a.js"], "styles": null } };
+const metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/2021/_app/pages/__layout.svelte-cc5d5b12.js", "css": ["/2021/_app/assets/pages/__layout.svelte-2febf179.css"], "js": ["/2021/_app/pages/__layout.svelte-cc5d5b12.js", "/2021/_app/chunks/vendor-6583ead2.js"], "styles": null }, ".svelte-kit/build/components/error.svelte": { "entry": "/2021/_app/error.svelte-8b6e5683.js", "css": [], "js": ["/2021/_app/error.svelte-8b6e5683.js", "/2021/_app/chunks/vendor-6583ead2.js"], "styles": null }, "src/routes/index.svelte": { "entry": "/2021/_app/pages/index.svelte-ffa82bde.js", "css": ["/2021/_app/assets/pages/index.svelte-b205bf21.css"], "js": ["/2021/_app/pages/index.svelte-ffa82bde.js", "/2021/_app/chunks/vendor-6583ead2.js"], "styles": null }, "src/routes/about.svelte": { "entry": "/2021/_app/pages/about.svelte-548b1f16.js", "css": ["/2021/_app/assets/pages/about.svelte-4db5be0d.css"], "js": ["/2021/_app/pages/about.svelte-548b1f16.js", "/2021/_app/chunks/vendor-6583ead2.js"], "styles": null }, "src/routes/todos/index.svelte": { "entry": "/2021/_app/pages/todos/index.svelte-f1c742a6.js", "css": ["/2021/_app/assets/pages/todos/index.svelte-05e41044.css"], "js": ["/2021/_app/pages/todos/index.svelte-f1c742a6.js", "/2021/_app/chunks/vendor-6583ead2.js"], "styles": null } };
 async function load_component(file) {
   return {
     module: await module_lookup[file](),
@@ -422,8 +422,11 @@ var error = /* @__PURE__ */ Object.freeze({
   "default": Error$1,
   load: load$1
 });
+var aj = "/2021/_app/assets/aj.d173f437.png";
+var miles = "/2021/_app/assets/miles.386aad76.png";
+var claire = "/2021/_app/assets/claire.c313f54c.png";
 var alan = "/2021/_app/assets/alan.1bae6698.png";
-var anthony = "/2021/_app/assets/anthony.946362ae.png";
+var anthony = "/2021/_app/assets/anthony.31f68e8e.png";
 var duke = "/2021/_app/assets/duke.d529b464.png";
 var jfey = "/2021/_app/assets/jfey.10bbc521.png";
 var jonny = "/2021/_app/assets/jonny.feee7c4f.png";
@@ -437,26 +440,27 @@ var chance = "/2021/_app/assets/chance.37fe77d5.png";
 var amber = "/2021/_app/assets/amber.c4847273.png";
 var ashleigh = "/2021/_app/assets/ashleigh.f8ef8c5d.png";
 var austin = "/2021/_app/assets/austin.1478292c.png";
-var ben = "/2021/_app/assets/ben.6160e631.png";
+var ben = "/2021/_app/assets/ben.95b6b1d7.png";
 var dane = "/2021/_app/assets/dane.651597a3.png";
-var kath = "/2021/_app/assets/kath.8f837788.png";
+var kath = "/2021/_app/assets/kath.c6c4439f.png";
 var kelly = "/2021/_app/assets/kelly.84591ba2.png";
 var lisi = "/2021/_app/assets/lisi.1e81f9a0.png";
-var molly = "/2021/_app/assets/molly.c4a144af.png";
-var tucker = "/2021/_app/assets/tucker.70cbc492.png";
+var molly = "/2021/_app/assets/molly.e62ac674.png";
+var tucker = "/2021/_app/assets/tucker.a5802a70.png";
 var verena = "/2021/_app/assets/verena.a3726105.png";
 var nada = "/2021/_app/assets/nada.c4381e5d.png";
+var ryan = "/2021/_app/assets/ryan.78f49fe3.png";
 var hannah = "/2021/_app/assets/hannah.4c930703.png";
 var carly = "/2021/_app/assets/carly.a195cb80.png";
 var conner = "/2021/_app/assets/conner.c739196b.png";
 var gabe = "/2021/_app/assets/gabe.9b423611.png";
 var gabewebster = "/2021/_app/assets/gabewebster.1db62d81.png";
-var dutchy = "/2021/_app/assets/dutchy.d71c3f6f.png";
+var dutchy = "/2021/_app/assets/dutchy.909b3eb8.png";
 var ty = "/2021/_app/assets/ty.885e3a31.png";
 var Roster_svelte_svelte_type_style_lang = "section.svelte-1wwtwaq{display:inline-flex;flex-wrap:wrap;gap:1.5em}table.svelte-1wwtwaq{max-width:30em;background:var(--bg-color)}h2.svelte-1wwtwaq,h3.svelte-1wwtwaq,h4.svelte-1wwtwaq{margin:0}img.svelte-1wwtwaq{max-width:100%}";
 const css$2 = {
   code: "section.svelte-1wwtwaq{display:inline-flex;flex-wrap:wrap;gap:1.5em}table.svelte-1wwtwaq{max-width:30em;background:var(--bg-color)}h2.svelte-1wwtwaq,h3.svelte-1wwtwaq,h4.svelte-1wwtwaq{margin:0}img.svelte-1wwtwaq{max-width:100%}",
-  map: `{"version":3,"file":"Roster.svelte","sources":["Roster.svelte"],"sourcesContent":["<script lang=\\"ts\\">import alan from './alan.png';\\nimport anthony from './anthony.png';\\nimport duke from './duke.png';\\nimport jfey from './jfey.png';\\nimport jonny from './jonny.png';\\nimport beezus from './beezus.png';\\nimport kyle from './kyle.png';\\nimport sandy from './sandy.png';\\nimport hackett from './hackett.png';\\nimport pete from './pete.png';\\nimport friend from './friend.png';\\nimport chance from './chance.png';\\nimport amber from './amber.png';\\nimport ashleigh from './ashleigh.png';\\nimport austin from './austin.png';\\nimport ben from './ben.png';\\nimport dane from './dane.png';\\nimport kath from './kath.png';\\nimport kelly from './kelly.png';\\nimport lisi from './lisi.png';\\nimport molly from './molly.png';\\nimport tucker from './tucker.png';\\nimport verena from './verena.png';\\nimport nada from './nada.png';\\nimport hannah from './hannah.png';\\nimport carly from './carly.png';\\nimport conner from './conner.png';\\nimport gabe from './gabe.png';\\nimport gabewebster from './gabewebster.png';\\nimport dutchy from './dutchy.png';\\nimport ty from './ty.png';\\nconst players = [\\n    {\\n        name: 'Alan Kolick',\\n        picture: alan,\\n        dinosaur: 'Oviraptor',\\n        link: 'https://en.wikipedia.org/wiki/Oviraptor',\\n        reason: 'steals eggs',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Anthony McLean',\\n        picture: anthony,\\n        dinosaur: 'Tyrannosaurus Rex',\\n        link: 'https://en.wikipedia.org/wiki/Tyrannosaurus',\\n        reason: 'chomp chomp',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'David \u201CDuke\u201D Boylan-Kolchin',\\n        picture: duke,\\n        dinosaur: 'Crocodile',\\n        link: 'https://en.wikipedia.org/wiki/Crocodile',\\n        reason: 'good at lurking; moves surprisingly quickly',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Jenny Fey',\\n        picture: jfey,\\n        dinosaur: 'Styracosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Styracosaurus',\\n        reason: 'has some points',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Jonny Malks',\\n        picture: jonny,\\n        dinosaur: 'Brachiosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Brachiosaurus',\\n        reason: 'slow; eats leaves',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Kelly \u201CBeezus\u201D Hyland',\\n        picture: beezus,\\n        dinosaur: 'Compsognathus',\\n        link: 'https://en.wikipedia.org/wiki/Compsognathus',\\n        reason: 'scratches/bites like a house cat',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Kyle Khalifa',\\n        picture: kyle,\\n        dinosaur: 'dinasor',\\n        link: 'https://www.youtube.com/watch?v=q6EoRBvdVPQ',\\n        reason: 'yeeee',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Sandy Jorgensen',\\n        picture: sandy,\\n        dinosaur: 'Allosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Allosaurus',\\n        reason: '\u201Cdifferent;\u201D will eat you up',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Theresa Hackett',\\n        picture: hackett,\\n        dinosaur: 'Diplodocus',\\n        link: 'https://en.wikipedia.org/wiki/Diplodocus',\\n        reason: 'longest tail of any creature that ever lived?',\\n        notes: '2nd year',\\n    },\\n    {\\n        name: 'Pete MacArthur',\\n        picture: pete,\\n        dinosaur: 'Hadrosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Hadrosaurus',\\n        reason: 'true middle',\\n        notes: '2nd year',\\n    },\\n    {\\n        name: 'Joe Freund',\\n        picture: friend,\\n        dinosaur: 'Argentinosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Argentinosaurus',\\n        reason: 'way bigger',\\n        notes: 'back for more',\\n    },\\n    {\\n        name: 'Chance Cochran',\\n        picture: chance,\\n        dinosaur: 'Irritator',\\n        link: 'https://en.wikipedia.org/wiki/Irritator',\\n        reason: 'a problem',\\n        notes: '\u201Creturner\u201D',\\n    },\\n    {\\n        name: 'AJ Merriman',\\n        picture: null,\\n        dinosaur: '',\\n        reason: '',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Amber Sinicrope',\\n        picture: amber,\\n        dinosaur: 'Ouranosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Ouranosaurus',\\n        reason: 'no, YOU are',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Ashleigh Buch',\\n        picture: ashleigh,\\n        dinoHtml: \`\\n\\t\\t\\t\\t<span style=\\"display:inline-flex;align-items: center; gap: .4em;\\">\\n\\t\\t\\t\\t<span style=\\"display:flex;flex-direction:column; gap: .2em; align-items:center\\">\\n\\t\\t\\t\\t\\t<span>distance raptor</span>\\n\\t\\t\\t\\t\\t<span style=\\"border-top:1px solid currentColor; align-self: stretch\\"></span>\\n\\t\\t\\t\\t\\t<span>time raptor</span>\\n\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t=\\n\\t\\t\\t\\t<a href='https://en.wikipedia.org/wiki/Velociraptor'>velociraptor</a>\\n\\t\\t\\t\\t</span>\\n\\t\\t\\t\`,\\n        reason: 'nerd',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Austin Bartenstein',\\n        picture: austin,\\n        dinosaur: 'Spinosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Spinosaurus',\\n        reason: 'would not be able to kill T Rex but \u201Cwould give good fight\u201D',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Ben Preiss',\\n        picture: ben,\\n        dinosaur: 'Gigantosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Gigantosaurus',\\n        reason: 'regular big',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Dane Warner',\\n        picture: dane,\\n        dinosaur: 'Muttaburrasaurus',\\n        link: 'https://en.wikipedia.org/wiki/Muttaburrasaurus',\\n        reason: 'weird toes; surprisingly long arms',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Kath Ratcliff',\\n        picture: kath,\\n        dinosaur: 'Triceraptops',\\n        link: 'https://en.wikipedia.org/wiki/Muttaburrasaurus',\\n        reason: 'three beautiful horns',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Kelly Ross',\\n        picture: kelly,\\n        dinosaur: 'Apatosaurus',\\n        link: 'https://en.wikipedia.org/wiki/List_of_The_Land_Before_Time_characters#Littlefoot',\\n        reason: '(aka Littlefoot) very long; has main character syndrome',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Lisi Lohre',\\n        picture: lisi,\\n        dinosaur: 'Pterodactylus',\\n        link: 'https://en.wikipedia.org/wiki/Pterodactylus',\\n        reason: 'as close to an owl as a dino can get',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Molly Roy',\\n        picture: molly,\\n        dinosaur: 'Sauralophus',\\n        link: 'https://en.wikipedia.org/wiki/The_Land_Before_Time_(film)',\\n        reason: '\u201Cyep, yep!\u201D',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Nikki \u201CTucker\u201D Ross',\\n        picture: tucker,\\n        dinosaur: 'Ankylosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Ankylosaurus',\\n        reason: 'bone crusher',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Verena Woloson',\\n        picture: verena,\\n        dinosaur: 'Stegosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Stegosaurus',\\n        reason: 'took a buzzfeed quiz',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Nada Tramonte',\\n        picture: nada,\\n        dinosaur: 'Pteronadon',\\n        link: 'https://en.wikipedia.org/wiki/Pteranodon',\\n        reason: 'because pterodactyl is a misnomer',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Hannah Boone',\\n        picture: hannah,\\n        dinosaur: 'Fabrosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Fabrosaurus',\\n        reason: 'might not be real',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Carly Campana',\\n        picture: carly,\\n        dinosaur: 'Iguanadon',\\n        reason: 'thumb spikes; prehensile fifth finger (aka thumb)',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Ryan Cooper',\\n        picture: null,\\n        dinosaur: '',\\n        reason: '',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Conner Fox',\\n        picture: conner,\\n        dinosaur: 'Plesiosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Plesiosaurus',\\n        reason: 'comfortable on the water',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Miles Grovic',\\n        picture: null,\\n        dinosaur: '',\\n        reason: '',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Gabe Webster',\\n        picture: gabewebster,\\n        dinosaur: 'Struthiomimus',\\n        link: 'https://en.wikipedia.org/wiki/Struthiomimus',\\n        reason: 'funky',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Gabe Westegren',\\n        picture: gabe,\\n        dinosaur: 'Archeopteryx',\\n        link: 'https://en.wikipedia.org/wiki/Archaeopteryx',\\n        reason: 'the very first bird',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Alex \u201CDutchy\u201D Ghesquiere',\\n        picture: dutchy,\\n        dinosaur: 'Troodon',\\n        link: 'https://dtrain.fandom.com/wiki/Troodon',\\n        reason: 'conductor of children',\\n        notes: 'coachy pal',\\n    },\\n    {\\n        name: 'Ty Aderhold',\\n        picture: ty,\\n        dinosaur: 'Pachycephalosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Pachycephalosaurus',\\n        reason: 'thick head, full of brains',\\n        notes: 'coachy pal',\\n    },\\n];\\n<\/script>\\n\\n<div>\\n\\t<h1>2021 Dinos</h1>\\n\\n\\t<section>\\n\\t\\t{#each players as { name, link, picture, dinoHtml, dinosaur, reason, notes }, i}\\n\\t\\t\\t<table border=\\"1\\" cellpadding=\\"8\\">\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td><h2>{name}</h2></td>\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>\\n\\t\\t\\t\\t\\t\\t<h3>\\n\\t\\t\\t\\t\\t\\t\\t{#if dinoHtml}\\n\\t\\t\\t\\t\\t\\t\\t\\t{@html dinoHtml}\\n\\t\\t\\t\\t\\t\\t\\t{:else}\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href={link} target=\\"_blank\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t{dinosaur}\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t{/if}\\n\\t\\t\\t\\t\\t\\t</h3>\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t<tr> <td><h4>{reason}</h4></td></tr>\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>{notes}</td>\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td><img loading=\\"lazy\\" width=\\"300\\" src={picture} alt=\\"\\" /></td>\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t</table>\\n\\t\\t{/each}\\n\\t</section>\\n</div>\\n\\n<style>\\n\\tsection {\\n\\t\\tdisplay: inline-flex;\\n\\t\\tflex-wrap: wrap;\\n\\t\\tgap: 1.5em;\\n\\t}\\n\\n\\ttable {\\n\\t\\tmax-width: 30em;\\n\\t\\tbackground: var(--bg-color);\\n\\t}\\n\\n\\th2,\\n\\th3,\\n\\th4 {\\n\\t\\tmargin: 0;\\n\\t}\\n\\n\\timg {\\n\\t\\tmax-width: 100%;\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AA2VC,OAAO,eAAC,CAAC,AACR,OAAO,CAAE,WAAW,CACpB,SAAS,CAAE,IAAI,CACf,GAAG,CAAE,KAAK,AACX,CAAC,AAED,KAAK,eAAC,CAAC,AACN,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,IAAI,UAAU,CAAC,AAC5B,CAAC,AAED,iBAAE,CACF,iBAAE,CACF,EAAE,eAAC,CAAC,AACH,MAAM,CAAE,CAAC,AACV,CAAC,AAED,GAAG,eAAC,CAAC,AACJ,SAAS,CAAE,IAAI,AAChB,CAAC"}`
+  map: `{"version":3,"file":"Roster.svelte","sources":["Roster.svelte"],"sourcesContent":["<script lang=\\"ts\\">import aj from './aj.png';\\nimport miles from './miles.png';\\nimport claire from './claire.png';\\nimport alan from './alan.png';\\nimport anthony from './anthony.png';\\nimport duke from './duke.png';\\nimport jfey from './jfey.png';\\nimport jonny from './jonny.png';\\nimport beezus from './beezus.png';\\nimport kyle from './kyle.png';\\nimport sandy from './sandy.png';\\nimport hackett from './hackett.png';\\nimport pete from './pete.png';\\nimport friend from './friend.png';\\nimport chance from './chance.png';\\nimport amber from './amber.png';\\nimport ashleigh from './ashleigh.png';\\nimport austin from './austin.png';\\nimport ben from './ben.png';\\nimport dane from './dane.png';\\nimport kath from './kath.png';\\nimport kelly from './kelly.png';\\nimport lisi from './lisi.png';\\nimport molly from './molly.png';\\nimport tucker from './tucker.png';\\nimport verena from './verena.png';\\nimport nada from './nada.png';\\nimport ryan from './ryan.png';\\nimport hannah from './hannah.png';\\nimport carly from './carly.png';\\nimport conner from './conner.png';\\nimport gabe from './gabe.png';\\nimport gabewebster from './gabewebster.png';\\nimport dutchy from './dutchy.png';\\nimport ty from './ty.png';\\nconst players = [\\n    {\\n        name: 'Alan Kolick',\\n        picture: alan,\\n        dinosaur: 'Oviraptor',\\n        link: 'https://en.wikipedia.org/wiki/Oviraptor',\\n        reason: 'steals eggs',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Anthony McLean',\\n        picture: anthony,\\n        dinosaur: 'Tyrannosaurus Rex',\\n        link: 'https://en.wikipedia.org/wiki/Tyrannosaurus',\\n        reason: 'chomp chomp',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'David \u201CDuke\u201D Boylan-Kolchin',\\n        picture: duke,\\n        dinosaur: 'Crocodile',\\n        link: 'https://en.wikipedia.org/wiki/Crocodile',\\n        reason: 'good at lurking; moves surprisingly quickly',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Jenny Fey',\\n        picture: jfey,\\n        dinosaur: 'Styracosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Styracosaurus',\\n        reason: 'dino-tsar; has some points',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Jonny Malks',\\n        picture: jonny,\\n        dinosaur: 'Brachiosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Brachiosaurus',\\n        reason: 'slow; eats leaves',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Kelly \u201CBeezus\u201D Hyland',\\n        picture: beezus,\\n        dinosaur: 'Compsognathus',\\n        link: 'https://en.wikipedia.org/wiki/Compsognathus',\\n        reason: 'scratches/bites like a house cat',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Kyle Khalifa',\\n        picture: kyle,\\n        dinosaur: 'dinasor',\\n        link: 'https://www.youtube.com/watch?v=q6EoRBvdVPQ',\\n        reason: 'yeeee',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Sandy Jorgensen',\\n        picture: sandy,\\n        dinosaur: 'Allosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Allosaurus',\\n        reason: '\u201Cdifferent;\u201D will eat you up',\\n        notes: '3rd year',\\n    },\\n    {\\n        name: 'Pete MacArthur',\\n        picture: pete,\\n        dinosaur: 'Hadrosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Hadrosaurus',\\n        reason: 'true middle',\\n        notes: '2nd year',\\n    },\\n    {\\n        name: 'Theresa Hackett',\\n        picture: hackett,\\n        dinosaur: 'Diplodocus',\\n        link: 'https://en.wikipedia.org/wiki/Diplodocus',\\n        reason: 'longest tail of any creature that ever lived?',\\n        notes: '2nd year',\\n    },\\n    {\\n        name: 'Joe Freund',\\n        picture: friend,\\n        dinosaur: 'Argentinosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Argentinosaurus',\\n        reason: 'way bigger',\\n        notes: 'back for more',\\n    },\\n    {\\n        name: 'Chance Cochran',\\n        picture: chance,\\n        dinosaur: 'Irritator',\\n        link: 'https://en.wikipedia.org/wiki/Irritator',\\n        reason: 'a problem',\\n        notes: '\u201Creturner\u201D',\\n    },\\n    {\\n        name: 'AJ Merriman',\\n        picture: aj,\\n        dinosaur: 'Momo',\\n        link: 'https://avatar.fandom.com/wiki/Momo',\\n        reason: 'sense of humor',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Amber Sinicrope',\\n        picture: amber,\\n        dinosaur: 'Ouranosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Ouranosaurus',\\n        reason: 'no, YOU are',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Ashleigh Buch',\\n        picture: ashleigh,\\n        dinoHtml: \`\\n\\t\\t\\t\\t<span style=\\"display:inline-flex;align-items: center; gap: .4em;\\">\\n\\t\\t\\t\\t<span style=\\"display:flex;flex-direction:column; gap: .2em; align-items:center\\">\\n\\t\\t\\t\\t\\t<span>distance raptor</span>\\n\\t\\t\\t\\t\\t<span style=\\"border-top:1px solid currentColor; align-self: stretch\\"></span>\\n\\t\\t\\t\\t\\t<span>time raptor</span>\\n\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t=\\n\\t\\t\\t\\t<a href='https://en.wikipedia.org/wiki/Velociraptor'>velociraptor</a>\\n\\t\\t\\t\\t</span>\\n\\t\\t\\t\`,\\n        reason: 'nerd',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Austin Bartenstein',\\n        picture: austin,\\n        dinosaur: 'Spinosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Spinosaurus',\\n        reason: 'would not be able to kill T Rex but \u201Cwould give good fight\u201D',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Ben Preiss',\\n        picture: ben,\\n        width: 200,\\n        aspectRatio: 0.6103764,\\n        dinosaur: 'Gorosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Gorosaurus',\\n        reason: 'does a cool jump kick thing to attack King Kong',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Dane Warner',\\n        picture: dane,\\n        dinosaur: 'Muttaburrasaurus',\\n        link: 'https://en.wikipedia.org/wiki/Muttaburrasaurus',\\n        reason: 'weird toes; surprisingly long arms',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Kath Ratcliff',\\n        picture: kath,\\n        dinosaur: 'Triceraptops',\\n        link: 'https://en.wikipedia.org/wiki/Muttaburrasaurus',\\n        reason: 'three beautiful horns',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Kelly Ross',\\n        picture: kelly,\\n        width: 175,\\n        aspectRatio: 0.49710025,\\n        dinosaur: 'Apatosaurus',\\n        link: 'https://en.wikipedia.org/wiki/List_of_The_Land_Before_Time_characters#Littlefoot',\\n        reason: '(aka Littlefoot) very long; has main character syndrome',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Lisi Lohre',\\n        picture: lisi,\\n        dinosaur: 'Pterodactylus',\\n        link: 'https://en.wikipedia.org/wiki/Pterodactylus',\\n        reason: 'as close to an owl as a dino can get',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Molly Roy',\\n        picture: molly,\\n        width: 225,\\n        aspectRatio: 0.8220339,\\n        dinosaur: 'Sauralophus',\\n        link: 'https://en.wikipedia.org/wiki/The_Land_Before_Time_(film)',\\n        reason: '\u201Cyep, yep!\u201D',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Nikki \u201CTucker\u201D Ross',\\n        picture: tucker,\\n        dinosaur: 'Ankylosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Ankylosaurus',\\n        reason: 'bone crusher',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Verena Woloson',\\n        picture: verena,\\n        dinosaur: 'Stegosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Stegosaurus',\\n        reason: 'took a buzzfeed quiz',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Nada Tramonte',\\n        picture: nada,\\n        dinosaur: 'Pteronadon',\\n        link: 'https://en.wikipedia.org/wiki/Pteranodon',\\n        reason: 'because pterodactyl is a misnomer',\\n        notes: '1st year',\\n    },\\n    {\\n        name: 'Hannah Boone',\\n        picture: hannah,\\n        dinosaur: 'Fabrosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Fabrosaurus',\\n        reason: 'might not be real',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Carly Campana',\\n        picture: carly,\\n        dinosaur: 'Iguanadon',\\n        link: 'https://en.wikipedia.org/wiki/Iguanodon',\\n        reason: 'thumb spikes; prehensile fifth finger (aka thumb)',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Claire Trop',\\n        picture: claire,\\n        link: 'https://media.giphy.com/media/cnS6tecHFYx0I/source.gif',\\n        dinosaur: 'All Dinos, All Saurs',\\n        reason: 'time is a flat circle',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Conner Fox',\\n        picture: conner,\\n        dinosaur: 'Plesiosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Plesiosaurus',\\n        reason: 'comfortable on the water',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Gabe Webster',\\n        picture: gabewebster,\\n        dinosaur: 'Struthiomimus',\\n        link: 'https://en.wikipedia.org/wiki/Struthiomimus',\\n        reason: 'funky',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Gabe Westegren',\\n        picture: gabe,\\n        dinosaur: 'Archeopteryx',\\n        link: 'https://en.wikipedia.org/wiki/Archaeopteryx',\\n        reason: 'the very first bird',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Miles Grovic',\\n        picture: miles,\\n        dinosaur: 'Saltopus',\\n        link: 'https://en.wikipedia.org/wiki/Saltopus',\\n        reason: '\\"hopping foot\\"',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Ryan Cooper',\\n        picture: ryan,\\n        dinosaur: 'Theupel Strudel',\\n        reason: 'the Dragonborn he made in D&D',\\n        link: 'https://dungeonsdragons.fandom.com/wiki/Dragonborn',\\n        notes: 'practice squad',\\n    },\\n    {\\n        name: 'Alex \u201CDutchy\u201D Ghesquiere',\\n        picture: dutchy,\\n        dinosaur: 'Troodon',\\n        link: 'https://dtrain.fandom.com/wiki/Troodon',\\n        reason: 'conductor of children',\\n        notes: 'coachy pal',\\n    },\\n    {\\n        name: 'Ty Aderhold',\\n        picture: ty,\\n        dinosaur: 'Pachycephalosaurus',\\n        link: 'https://en.wikipedia.org/wiki/Pachycephalosaurus',\\n        reason: 'thick head, full of brains',\\n        notes: 'coachy pal',\\n    },\\n];\\n<\/script>\\n\\n<div>\\n\\t<h1>2021 Dinos</h1>\\n\\n\\t<section>\\n\\t\\t{#each players as { name, link, picture, width, aspectRatio, dinoHtml, dinosaur, reason, notes }, i}\\n\\t\\t\\t<table border=\\"1\\" cellpadding=\\"8\\">\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td><h2>{name}</h2></td>\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>\\n\\t\\t\\t\\t\\t\\t<h3>\\n\\t\\t\\t\\t\\t\\t\\t{#if dinoHtml}\\n\\t\\t\\t\\t\\t\\t\\t\\t{@html dinoHtml}\\n\\t\\t\\t\\t\\t\\t\\t{:else}\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href={link} target=\\"_blank\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t{dinosaur}\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t{/if}\\n\\t\\t\\t\\t\\t\\t</h3>\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t<tr> <td><h4>{reason}</h4></td></tr>\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>{notes}</td>\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td\\n\\t\\t\\t\\t\\t\\t><img\\n\\t\\t\\t\\t\\t\\t\\tloading=\\"lazy\\"\\n\\t\\t\\t\\t\\t\\t\\twidth={width || 300}\\n\\t\\t\\t\\t\\t\\t\\tstyle=\\"aspect-ratio: {aspectRatio}\\"\\n\\t\\t\\t\\t\\t\\t\\tsrc={picture}\\n\\t\\t\\t\\t\\t\\t\\talt=\\"\\"\\n\\t\\t\\t\\t\\t\\t/></td\\n\\t\\t\\t\\t\\t>\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t</table>\\n\\t\\t{/each}\\n\\t</section>\\n</div>\\n\\n<style>\\n\\tsection {\\n\\t\\tdisplay: inline-flex;\\n\\t\\tflex-wrap: wrap;\\n\\t\\tgap: 1.5em;\\n\\t}\\n\\n\\ttable {\\n\\t\\tmax-width: 30em;\\n\\t\\tbackground: var(--bg-color);\\n\\t}\\n\\n\\th2,\\n\\th3,\\n\\th4 {\\n\\t\\tmargin: 0;\\n\\t}\\n\\n\\timg {\\n\\t\\tmax-width: 100%;\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AAyXC,OAAO,eAAC,CAAC,AACR,OAAO,CAAE,WAAW,CACpB,SAAS,CAAE,IAAI,CACf,GAAG,CAAE,KAAK,AACX,CAAC,AAED,KAAK,eAAC,CAAC,AACN,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,IAAI,UAAU,CAAC,AAC5B,CAAC,AAED,iBAAE,CACF,iBAAE,CACF,EAAE,eAAC,CAAC,AACH,MAAM,CAAE,CAAC,AACV,CAAC,AAED,GAAG,eAAC,CAAC,AACJ,SAAS,CAAE,IAAI,AAChB,CAAC"}`
 };
 const Roster = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   const players = [
@@ -489,7 +493,7 @@ const Roster = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       picture: jfey,
       dinosaur: "Styracosaurus",
       link: "https://en.wikipedia.org/wiki/Styracosaurus",
-      reason: "has some points",
+      reason: "dino-tsar; has some points",
       notes: "3rd year"
     },
     {
@@ -525,19 +529,19 @@ const Roster = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       notes: "3rd year"
     },
     {
-      name: "Theresa Hackett",
-      picture: hackett,
-      dinosaur: "Diplodocus",
-      link: "https://en.wikipedia.org/wiki/Diplodocus",
-      reason: "longest tail of any creature that ever lived?",
-      notes: "2nd year"
-    },
-    {
       name: "Pete MacArthur",
       picture: pete,
       dinosaur: "Hadrosaurus",
       link: "https://en.wikipedia.org/wiki/Hadrosaurus",
       reason: "true middle",
+      notes: "2nd year"
+    },
+    {
+      name: "Theresa Hackett",
+      picture: hackett,
+      dinosaur: "Diplodocus",
+      link: "https://en.wikipedia.org/wiki/Diplodocus",
+      reason: "longest tail of any creature that ever lived?",
       notes: "2nd year"
     },
     {
@@ -558,9 +562,10 @@ const Roster = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {
       name: "AJ Merriman",
-      picture: null,
-      dinosaur: "",
-      reason: "",
+      picture: aj,
+      dinosaur: "Momo",
+      link: "https://avatar.fandom.com/wiki/Momo",
+      reason: "sense of humor",
       notes: "1st year"
     },
     {
@@ -599,9 +604,11 @@ const Roster = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     {
       name: "Ben Preiss",
       picture: ben,
-      dinosaur: "Gigantosaurus",
-      link: "https://en.wikipedia.org/wiki/Gigantosaurus",
-      reason: "regular big",
+      width: 200,
+      aspectRatio: 0.6103764,
+      dinosaur: "Gorosaurus",
+      link: "https://en.wikipedia.org/wiki/Gorosaurus",
+      reason: "does a cool jump kick thing to attack King Kong",
       notes: "1st year"
     },
     {
@@ -623,6 +630,8 @@ const Roster = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     {
       name: "Kelly Ross",
       picture: kelly,
+      width: 175,
+      aspectRatio: 0.49710025,
       dinosaur: "Apatosaurus",
       link: "https://en.wikipedia.org/wiki/List_of_The_Land_Before_Time_characters#Littlefoot",
       reason: "(aka Littlefoot) very long; has main character syndrome",
@@ -639,6 +648,8 @@ const Roster = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     {
       name: "Molly Roy",
       picture: molly,
+      width: 225,
+      aspectRatio: 0.8220339,
       dinosaur: "Sauralophus",
       link: "https://en.wikipedia.org/wiki/The_Land_Before_Time_(film)",
       reason: "\u201Cyep, yep!\u201D",
@@ -680,14 +691,16 @@ const Roster = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       name: "Carly Campana",
       picture: carly,
       dinosaur: "Iguanadon",
+      link: "https://en.wikipedia.org/wiki/Iguanodon",
       reason: "thumb spikes; prehensile fifth finger (aka thumb)",
       notes: "practice squad"
     },
     {
-      name: "Ryan Cooper",
-      picture: null,
-      dinosaur: "",
-      reason: "",
+      name: "Claire Trop",
+      picture: claire,
+      link: "https://media.giphy.com/media/cnS6tecHFYx0I/source.gif",
+      dinosaur: "All Dinos, All Saurs",
+      reason: "time is a flat circle",
       notes: "practice squad"
     },
     {
@@ -696,13 +709,6 @@ const Roster = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       dinosaur: "Plesiosaurus",
       link: "https://en.wikipedia.org/wiki/Plesiosaurus",
       reason: "comfortable on the water",
-      notes: "practice squad"
-    },
-    {
-      name: "Miles Grovic",
-      picture: null,
-      dinosaur: "",
-      reason: "",
       notes: "practice squad"
     },
     {
@@ -719,6 +725,22 @@ const Roster = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       dinosaur: "Archeopteryx",
       link: "https://en.wikipedia.org/wiki/Archaeopteryx",
       reason: "the very first bird",
+      notes: "practice squad"
+    },
+    {
+      name: "Miles Grovic",
+      picture: miles,
+      dinosaur: "Saltopus",
+      link: "https://en.wikipedia.org/wiki/Saltopus",
+      reason: '"hopping foot"',
+      notes: "practice squad"
+    },
+    {
+      name: "Ryan Cooper",
+      picture: ryan,
+      dinosaur: "Theupel Strudel",
+      reason: "the Dragonborn he made in D&D",
+      link: "https://dungeonsdragons.fandom.com/wiki/Dragonborn",
       notes: "practice squad"
     },
     {
@@ -741,13 +763,13 @@ const Roster = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$2);
   return `<div><h1>2021 Dinos</h1>
 
-	<section class="${"svelte-1wwtwaq"}">${each(players, ({ name, link, picture, dinoHtml, dinosaur, reason, notes }, i) => `<table border="${"1"}" cellpadding="${"8"}" class="${"svelte-1wwtwaq"}"><tr><td><h2 class="${"svelte-1wwtwaq"}">${escape(name)}</h2></td></tr>
+	<section class="${"svelte-1wwtwaq"}">${each(players, ({ name, link, picture, width, aspectRatio, dinoHtml, dinosaur, reason, notes }, i) => `<table border="${"1"}" cellpadding="${"8"}" class="${"svelte-1wwtwaq"}"><tr><td><h2 class="${"svelte-1wwtwaq"}">${escape(name)}</h2></td></tr>
 				<tr><td><h3 class="${"svelte-1wwtwaq"}">${dinoHtml ? `<!-- HTML_TAG_START -->${dinoHtml}<!-- HTML_TAG_END -->` : `<a${add_attribute("href", link, 0)} target="${"_blank"}">${escape(dinosaur)}
 								</a>`}</h3>
 					</td></tr>
 				<tr><td><h4 class="${"svelte-1wwtwaq"}">${escape(reason)}</h4></td></tr>
 				<tr><td>${escape(notes)}</td></tr>
-				<tr><td><img loading="${"lazy"}" width="${"300"}"${add_attribute("src", picture, 0)} alt="${""}" class="${"svelte-1wwtwaq"}"></td></tr>
+				<tr><td><img loading="${"lazy"}"${add_attribute("width", width || 300, 0)} style="${"aspect-ratio: " + escape(aspectRatio)}"${add_attribute("src", picture, 0)} alt="${""}" class="${"svelte-1wwtwaq"}"></td></tr>
 			</table>`)}</section>
 </div>`;
 });
