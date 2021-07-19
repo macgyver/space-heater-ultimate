@@ -250,7 +250,7 @@
 		{
 			name: 'Nada Tramonte',
 			picture: nada,
-			dinosaur: 'Pteronadon',
+			dinosaur: 'Pteranodon',
 			link: 'https://en.wikipedia.org/wiki/Pteranodon',
 			reason: 'because pterodactyl is a misnomer',
 			notes: '1st year',
