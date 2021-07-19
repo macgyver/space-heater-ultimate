@@ -3,13 +3,12 @@
 # abort on errors
 set -e
 
-# todo: check it does not have -- in front
-if [ -z "$1" ]; then
-    echo 'ERROR: No season supplied - Try specifiying a year "./deploy.sh 2021" or all "./deploy.sh all"'
+firsttwo="${1:0:2}"
+if [ -z "$1" ] || [[ "$firsttwo" = "--" ]]; then
+    echo 'ERROR: No season supplied - try specifiying a year, e.g. "./deploy.sh 2021"'
     exit 1
 fi
 
-echo "doing git stuff"
 git fetch
 git checkout master
 git rebase origin/master
