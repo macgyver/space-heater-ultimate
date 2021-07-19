@@ -37,10 +37,10 @@ echo 'spaceheaterultimate.com' > CNAME
 if [[ $* == *"--dryrun"* ]]; then
 	echo "not committing during dryrun"
 else
-	isodate=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+	tagname=$(date -u +"%Y%m%dT%H%M%SZ")
 	git add -A
-	git commit -m "deploy $isodate"
-	git tag "v$isodate"
+	git commit -m "deploy $tagname"
+	git tag "v$tagname"
 
 	# if you are deploying to https://<USERNAME>.github.io
 	# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
