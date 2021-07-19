@@ -12,7 +12,9 @@
 		<ul>
 			<li><a href="https://twitter.com/spaceheaterulti/">Twitter 🐦</a></li>
 			<li>
-				<a href="https://spaceheaterultimate.com/2019/index.html">2019 team</a>
+				<a target="_blank" href="https://spaceheaterultimate.com/2019/"
+					>2019 team</a
+				>
 			</li>
 		</ul>
 
