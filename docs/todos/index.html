@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Todos</title>
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-c212800b.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-6583ead2.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-cc5d5b12.js">
+		<link rel="modulepreload" href="/./_app/pages/todos/index.svelte-f1c742a6.js">
+		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-2febf179.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/todos/index.svelte-05e41044.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-c212800b.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-cc5d5b12.js"),
+						import("/./_app/pages/todos/index.svelte-f1c742a6.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/todos",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<header><img src="/_app/assets/space-heater.1fefce1a.png" width="196" height="196" alt="" class="svelte-1umxkvr">
+	<h1>Space Heater</h1>
+	<h2>Elite Mixed Club Ultimate Team</h2>
+	<h3>Washington, DC</h3>
+
+	<nav><ul><li><a href="https://twitter.com/spaceheaterulti/">Twitter 🐦</a></li>
+	<li><a href="https://spaceheaterultimate.com/2019/">2019 team</a></li></ul>
+
+</nav>
+	<hr size="3">
+</header>
+
+<main>
+
+<div class="todos svelte-dmxqmd"><h1>Todos</h1>
+
+	<form class="new svelte-dmxqmd" action="/todos.json" method="post"><input name="text" aria-label="Add todo" placeholder="+ tap to add a todo" class="svelte-dmxqmd"></form>
+
+	
+</div></main>
+
+<footer size="-1" class="svelte-1gkn2jk"><form><fieldset><legend>Space Heater E-Mail List</legend>
+	<label>Enter your e-mail address
+		<input></label>
+	<input type="submit"></fieldset></form>
+	last updated 20210712 11:08:30Z
+</footer>
+
+
+
+	<script type="application/json" data-type="svelte-data" data-url="/todos.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"[]"}</script>
+</div>
+	</body>
+</html>

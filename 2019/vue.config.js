@@ -1,4 +1,4 @@
 module.exports = {
 	// publicPath: 'space-heater-ultimate',
-	outputDir: '../docs',
+	outputDir: '../docs/2019',
 }
