@@ -1,4 +1,8 @@
 <script lang="ts">
+	// images sized to 600px wide, reduced to 256 colors via ImageAlpha, and then optimized with ImageOptim
+	import aj from './aj.png'
+	import miles from './miles.png'
+	import claire from './claire.png'
 	import alan from './alan.png'
 	import anthony from './anthony.png'
 	import duke from './duke.png'
@@ -23,6 +27,7 @@
 	import tucker from './tucker.png'
 	import verena from './verena.png'
 	import nada from './nada.png'
+	import ryan from './ryan.png'
 	import hannah from './hannah.png'
 	import carly from './carly.png'
 	// import ryan from './ryan.png'
@@ -63,7 +68,7 @@
 			picture: jfey,
 			dinosaur: 'Styracosaurus',
 			link: 'https://en.wikipedia.org/wiki/Styracosaurus',
-			reason: 'has some points',
+			reason: 'dino-tsar; has some points',
 			notes: '3rd year',
 		},
 		{
@@ -96,6 +101,14 @@
 			dinosaur: 'Allosaurus',
 			link: 'https://en.wikipedia.org/wiki/Allosaurus',
 			reason: '“different;” will eat you up',
+			notes: '3rd year',
+		},
+		{
+			name: 'Pete MacArthur',
+			picture: pete,
+			dinosaur: 'Hadrosaurus',
+			link: 'https://en.wikipedia.org/wiki/Hadrosaurus',
+			reason: 'true middle',
 			notes: '2nd year',
 		},
 		{
@@ -104,14 +117,6 @@
 			dinosaur: 'Diplodocus',
 			link: 'https://en.wikipedia.org/wiki/Diplodocus',
 			reason: 'longest tail of any creature that ever lived?',
-			notes: '2nd year',
-		},
-		{
-			name: 'Pete MacArthur',
-			picture: pete,
-			dinosaur: 'Hadrosaurus',
-			link: 'https://en.wikipedia.org/wiki/Hadrosaurus',
-			reason: 'true middle',
 			notes: '2nd year',
 		},
 		{
@@ -132,9 +137,10 @@
 		},
 		{
 			name: 'AJ Merriman',
-			picture: null,
-			dinosaur: '',
-			reason: '',
+			picture: aj,
+			dinosaur: 'Momo',
+			link: 'https://avatar.fandom.com/wiki/Momo',
+			reason: 'sense of humor',
 			notes: '1st year',
 		},
 		{
@@ -173,9 +179,11 @@
 		{
 			name: 'Ben Preiss',
 			picture: ben,
-			dinosaur: 'Gigantosaurus',
-			link: 'https://en.wikipedia.org/wiki/Gigantosaurus',
-			reason: 'regular big',
+			width: 200,
+			aspectRatio: 0.6103764,
+			dinosaur: 'Gorosaurus',
+			link: 'https://en.wikipedia.org/wiki/Gorosaurus',
+			reason: 'does a cool jump kick thing to attack King Kong',
 			notes: '1st year',
 		},
 		{
@@ -197,6 +205,8 @@
 		{
 			name: 'Kelly Ross',
 			picture: kelly,
+			width: 175,
+			aspectRatio: 0.49710025,
 			dinosaur: 'Apatosaurus',
 			link:
 				'https://en.wikipedia.org/wiki/List_of_The_Land_Before_Time_characters#Littlefoot',
@@ -214,6 +224,8 @@
 		{
 			name: 'Molly Roy',
 			picture: molly,
+			width: 225,
+			aspectRatio: 0.8220339,
 			dinosaur: 'Sauralophus',
 			link: 'https://en.wikipedia.org/wiki/The_Land_Before_Time_(film)',
 			reason: '“yep, yep!”',
@@ -255,14 +267,16 @@
 			name: 'Carly Campana',
 			picture: carly,
 			dinosaur: 'Iguanadon',
+			link: 'https://en.wikipedia.org/wiki/Iguanodon',
 			reason: 'thumb spikes; prehensile fifth finger (aka thumb)',
 			notes: 'practice squad',
 		},
 		{
-			name: 'Ryan Cooper',
-			picture: null,
-			dinosaur: '',
-			reason: '',
+			name: 'Claire Trop',
+			picture: claire,
+			link: 'https://media.giphy.com/media/cnS6tecHFYx0I/source.gif',
+			dinosaur: 'All Dinos, All Saurs',
+			reason: 'time is a flat circle',
 			notes: 'practice squad',
 		},
 		{
@@ -282,13 +296,6 @@
 			notes: 'practice squad',
 		},
 		{
-			name: 'Miles Grovic',
-			picture: null,
-			dinosaur: '',
-			reason: '',
-			notes: 'practice squad',
-		},
-		{
 			name: 'Gabe Westegren',
 			picture: gabe,
 			dinosaur: 'Archeopteryx',
@@ -296,6 +303,23 @@
 			reason: 'the very first bird',
 			notes: 'practice squad',
 		},
+		{
+			name: 'Miles Grovic',
+			picture: miles,
+			dinosaur: 'Saltopus',
+			link: 'https://en.wikipedia.org/wiki/Saltopus',
+			reason: '"hopping foot"',
+			notes: 'practice squad',
+		},
+		{
+			name: 'Ryan Cooper',
+			picture: ryan,
+			dinosaur: 'Theupel Strudel',
+			reason: 'the Dragonborn he made in D&D',
+			link: 'https://dungeonsdragons.fandom.com/wiki/Dragonborn',
+			notes: 'practice squad',
+		},
+
 		{
 			name: 'Alex “Dutchy” Ghesquiere',
 			picture: dutchy,
@@ -319,7 +343,7 @@
 	<h1>2021 Dinos</h1>
 
 	<section>
-		{#each players as { name, link, picture, dinoHtml, dinosaur, reason, notes }, i}
+		{#each players as { name, link, picture, width, aspectRatio, dinoHtml, dinosaur, reason, notes }, i}
 			<table border="1" cellpadding="8">
 				<tr>
 					<td><h2>{name}</h2></td>
@@ -342,7 +366,15 @@
 					<td>{notes}</td>
 				</tr>
 				<tr>
-					<td><img loading="lazy" width="300" src={picture} alt="" /></td>
+					<td
+						><img
+							loading="lazy"
+							width={width || 300}
+							style="aspect-ratio: {aspectRatio}"
+							src={picture}
+							alt=""
+						/></td
+					>
 				</tr>
 			</table>
 		{/each}
