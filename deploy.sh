@@ -40,7 +40,7 @@ else
 	isodate=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 	git add -A
 	git commit -m "deploy $isodate"
-	git tag $isodate
+	git tag "v$isodate"
 
 	# if you are deploying to https://<USERNAME>.github.io
 	# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
