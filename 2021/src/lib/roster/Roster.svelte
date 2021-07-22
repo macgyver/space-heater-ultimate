@@ -1,15 +1,16 @@
 <script lang="ts">
-	// images sized to 600px wide, reduced to 256 colors via ImageAlpha, and then optimized with ImageOptim
+	// images sized to 600px wide or 2x whatever the declared width is,
+	// pngs reduced to 256 colors via ImageAlpha, and all optimized with ImageOptim
 	import aj from './aj.png'
 	import miles from './miles.png'
-	import claire from './claire.png'
+	import claire from './claire.jpg'
 	import alan from './alan.png'
 	import anthony from './anthony.png'
-	import duke from './duke.png'
+	import duke from './duke.jpg'
 	import jfey from './jfey.png'
 	import jonny from './jonny.png'
 	import beezus from './beezus.png'
-	import kyle from './kyle.png'
+	import kyle from './kyle.jpg'
 	import sandy from './sandy.png'
 	import hackett from './hackett.png'
 	import pete from './pete.png'
