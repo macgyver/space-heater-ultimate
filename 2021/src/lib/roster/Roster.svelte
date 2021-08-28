@@ -196,6 +196,14 @@
 			notes: '1st year',
 		},
 		{
+			name: 'Gabe Webster',
+			picture: gabewebster,
+			dinosaur: 'Struthiomimus',
+			link: 'https://en.wikipedia.org/wiki/Struthiomimus',
+			reason: 'funky',
+			notes: '1st year',
+		},
+		{
 			name: 'Kath Ratcliff',
 			picture: kath,
 			dinosaur: 'Triceraptops',
@@ -288,14 +296,7 @@
 			reason: 'comfortable on the water',
 			notes: 'practice squad',
 		},
-		{
-			name: 'Gabe Webster',
-			picture: gabewebster,
-			dinosaur: 'Struthiomimus',
-			link: 'https://en.wikipedia.org/wiki/Struthiomimus',
-			reason: 'funky',
-			notes: 'practice squad',
-		},
+
 		{
 			name: 'Gabe Westegren',
 			picture: gabe,
